@@ -1,0 +1,13 @@
+	<div fxLayout="row" *ngFor="let todo of todos; index as i" style="padding-bottom: 10px">
+		<button mat-raised-button (click)="completeTodo(i)">{{todo.todo}}</button>
+		<span fxFlexOffset="5">
+      <button mat-raised-button mat-icon-button>
+        <mat-icon>edit</mat-icon>
+      </button>
+    </span>
+		<span>
+      <button mat-raised-button mat-icon-button>
+        <mat-icon>delete</mat-icon>
+      </button>
+    </span>
+	</div>

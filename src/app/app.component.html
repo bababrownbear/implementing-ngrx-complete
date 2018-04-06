@@ -1,0 +1,19 @@
+<mat-card>
+	<mat-card-content>
+		<h2>Todo List</h2>
+	</mat-card-content>
+
+	<div>
+		<form>
+			<mat-form-field>
+				<input autocomplete="off" matInput placeholder="Add todo item" [(ngModel)]="todo" name="todo">
+			</mat-form-field>
+			<button type="submit" (click)="addTodoItem()" mat-raised-button mat-icon-button>
+        <mat-icon>add</mat-icon>
+      </button>
+		</form>
+	</div>
+
+  <app-todo-list></app-todo-list>
+
+</mat-card>
